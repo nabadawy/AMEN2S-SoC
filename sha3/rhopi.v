@@ -1,13 +1,16 @@
 module rhopi (
-    input [0:31] in_st,
+  input [63:0] in_st,
     input rotc,
-    output [0:31] out_st
+  output [63:0] out_st
 );
 
-assign out_st = ROTL64(in_st, rotc);
+  wire [63:0] shift1;
+wire [63:0] shift2;
+    
 
-    function [0:31] ROTL64(integer x, integer y);
-        ROTL64 = (((x) << (y)) | ((x) >> (32 - (y))));
-endfunction
+assign shift1=in_st << rotc;
+assign shift2 = in_st>>(64-rotc);
+
+assign out_st = shift1 | shift2;
 
 endmodule
