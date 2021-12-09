@@ -1,15 +1,19 @@
 //calculate bc outside and take it as input
 module theta (
-    input [0:31] in_st,
-    input [0:63] bc,
-    output [0:31] out_st
+    input [63:0] in_st,
+    input [127:0] bc,
+    output [63:0] out_st
     
 );
 
-    assign out_st = in_st ^ bc[0:31] ^ ROTL64(bc[32:63], 1);
+wire [63:0] shift1;
+wire [63:0] shift2;
+wire [63:0] ORout;
+    
 
-    function [0:31] ROTL64(integer x, integer y);
-        ROTL64 = (((x) << (y)) | ((x) >> (32 - (y))));
-endfunction
+  assign shift1=bc[127:64] <<1;
+  assign shift2 =bc[127:64]>>63;
+  assign ORout= shift1 | shift2;
+  assign out_st = in_st ^ bc[63:0] ^ ORout;
 
 endmodule
