@@ -18,8 +18,8 @@ Since,area of MAC unit is very small (0.00235 mm^2) (264 gate cells) and the spe
 
 
 ## Architecture :
+![Untitled Diagram2 drawio](https://user-images.githubusercontent.com/72893623/145666681-c4b636fd-2805-4e9d-9af7-9a038ea49d84.png)
 
-![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/72893623/145666664-f81cddb1-433d-43c4-b72f-98bdea884c77.png)
 
 
 ## Area and Speed Analysis:
@@ -32,19 +32,26 @@ Since,area of MAC unit is very small (0.00235 mm^2) (264 gate cells) and the spe
 
 ## Cycles Analysis:
 
+<img width="254" alt="acceleratedconvolution" src="https://user-images.githubusercontent.com/72893623/145666993-4fea5f16-af98-4ed6-94c4-514182638be5.png">
+
+<img width="258" alt="unaccelerated convolution" src="https://user-images.githubusercontent.com/72893623/145666994-cd952a3a-ce99-471f-9763-57491110971d.png">
+
+<img width="257" alt="speedup" src="https://user-images.githubusercontent.com/72893623/145666998-52a9609b-7a57-4476-87f9-259fdea20e82.png">
 
 
-
-# Parallep MAC paths Accelerator
+# Paralle MAC paths Accelerator
 
 ## Motivation:
+* Area of MAC accelerator is very small (0.0231 mm^2) (2593 cells)
+* Further reduction to Memory access by reusing input data
+* Make use of parallelism operations
 
 
 ## Architecture :
-![Untitled Diagram2 drawio](https://user-images.githubusercontent.com/72893623/145666681-c4b636fd-2805-4e9d-9af7-9a038ea49d84.png)
+![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/72893623/145666664-f81cddb1-433d-43c4-b72f-98bdea884c77.png)
 
 
-## Cycles Analysis:
+
 
 
 
