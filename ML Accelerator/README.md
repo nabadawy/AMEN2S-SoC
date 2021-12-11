@@ -1,13 +1,17 @@
 # One 8-bit MAC unit accelerator
+We are using one unit to save area and minimise the delay. In order to do that we made divided the input into 4 8-bits passed to a 4x1 Mux and with the use of the 2-bits counter as a mux selector which increments with another clock 4x faster than the SoC's clock, we were able to implement the unit and get the desired functionality.
 
 ## Architecture:
-
+![Untitled Diagram2 drawio](1unit-accelerator/ml.drawio.png)
 
 
 ## Area and Speed Analysis
+#gates: 742		area(um2): 6377.37			delay(ps): 3877.12
 
+![Untitled Diagram2 drawio](https://user-images.githubusercontent.com/62911896/145671523-54b7a095-4796-4dd6-9708-4ad5f72ef02c.png)
 
 ## power Analysis
+In order to add a second clock which is 4 times faster than the SoC's clock, we needed to implement a PLL which will multiply the original clock with a factor of 4. However, the PLL implementation will consume much area and power which contradicts out aim which is being area wise and energy effecient.  
 
 
 # Four 8-bit MAC unit accelerator
