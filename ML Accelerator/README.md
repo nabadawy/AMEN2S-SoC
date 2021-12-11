@@ -51,6 +51,12 @@ Since,area of MAC unit is very small (0.00235 mm^2) (264 gate cells) and the spe
 ![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/72893623/145666664-f81cddb1-433d-43c4-b72f-98bdea884c77.png)
 
 
+## Analysis :
+
+
+<img width="576" alt="analysis" src="https://user-images.githubusercontent.com/72893623/145667264-be763238-0859-4904-b4bb-cc302d1a0fa6.png">
+
+<img width="768" alt="analysis2" src="https://user-images.githubusercontent.com/72893623/145667266-df018e0b-121e-4a10-b729-c4e0bd25307e.png">
 
 
 
