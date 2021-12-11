@@ -3,7 +3,7 @@
 In this project we are trying to design an SoC which can deploy a machine learning and do data encryption on the edge while meeting the constraints of the real time applications and without increasing the power usage. 
 To do this, we needed to explore three parts:
 ### 1) Machine Learning Acceleration:
-In this part .... More details could be found [here](https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/ML%20Accelerator)
+In this part, we design ML accelerator to speedup MAC operations wich is the main unit of convolution function. More details could be found [here](https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/ML%20Accelerator)
 ### 2) Data Encryption Acceleration:
 In this part .... More details could be found [here](https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/sha3)
 ### 3) Accelerators integration with SoC:
