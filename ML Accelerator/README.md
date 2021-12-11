@@ -15,6 +15,7 @@
 
 ## Motivation:
 Since,area of MAC unit is very small (0.00235 mm^2) (264 gate cells) and the speed of one unit is 2.2ns less than 0.25% of clk cycle period, and to avoid the over head of using another clk, we propose that ML accelerator can consists of 4 8-bit MAC units.
+The code will be found [here] https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/ML%20Accelerator/4units-accelrator
 
 
 ## Architecture :
