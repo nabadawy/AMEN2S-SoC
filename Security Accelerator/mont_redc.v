@@ -1,15 +1,3 @@
-/*
-#define N 169  //N
-#define NINV 103  // N*N'≡-1
-#define R 256
-#define R2 133 //R2 = R^2 mod N 
-#define RIND 8
-
-//MontgomeryReduction
-int MR(int x){
-    return (x + (x * NINV & (R-1)) * N) >> RIND;
-}
-*/
 //xR^-1 mod m
 module mont_reduce (
 	input [31:0] x,//the number to compute its mont reduction
