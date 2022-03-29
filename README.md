@@ -1,6 +1,6 @@
 # Energy Efficient Soc through acceleration for IoT applications
 ## Project Description:
-In this project we are trying to design an SoC which can deploy a machine learning and do data encryption on the edge while meeting the constraints of the real time applications and without increasing the power usage. 
+The main Target of the product is contributing to the hardware development flow for the IoT devices. The product is an open source single core System on chip, based on the open source Chameleon SoC with 32-bit RISC-V (Ibex core) augmented with specialized blocks for compute-intensive data processing and encryption functions, supporting software codesign through NNOM and wolfSSL libraries. 
 To do this, we needed to explore three parts:
 ### 1) Machine Learning Acceleration:
 In this part, we were aiming to accelerate the machine leaning models thatr deployed on  embeded systems for IOT devices. We first started with profiling KWS model to  find that convolution took 95.95% of the total time. Therefore, we worked on designing an ML accelerator to speedup MAC operations wich is the main unit of convolution function. More details could be found [here](https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/ML%20Accelerator)
