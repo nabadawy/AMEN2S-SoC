@@ -2,7 +2,7 @@
 We are using one unit to save area and minimise the delay. In order to do that we made divided the input into 4 8-bits passed to a 4x1 Mux and with the use of the 2-bits counter as a mux selector which increments with another clock 4x faster than the SoC's clock, we were able to implement the unit and get the desired functionality.
 
 ## Architecture:
-![Untitled Diagram2 drawio](1unit-accelerator/ml.drawio.png)
+![MAC unit architecture](MAC_unit/mac.png)
 
 
 ## Area and Speed Analysis
@@ -11,8 +11,7 @@ We are using one unit to save area and minimise the delay. In order to do that w
 ![Untitled Diagram2 drawio](https://user-images.githubusercontent.com/62911896/145671523-54b7a095-4796-4dd6-9708-4ad5f72ef02c.png)
 
 ## power Analysis
-In order to add a second clock which is 4 times faster than the SoC's clock, we needed to implement a PLL which will multiply the original clock with a factor of 4. However, the PLL implementation will consume much area and power which contradicts out aim which is being area wise and energy effecient.  
-
+Our aim is to increase the speed of the accelerator without increasing the power consumption. That is why we migrated the convolution function to hte hardware instead of the software to increase the speed with less power usage. The power consumption is the power of the software plus the power ot the hardware.
 
 # Four 8-bit MAC unit accelerator
 
@@ -23,7 +22,7 @@ The code will be found [here](https://github.com/nabadawy/Energy-Efficient-Soc-t
 
 
 ## Architecture :
-![Untitled Diagram2 drawio](https://user-images.githubusercontent.com/72893623/145666681-c4b636fd-2805-4e9d-9af7-9a038ea49d84.png)
+![Four MAC units](four_mac/4mac.png)
 
 
 
