@@ -1,4 +1,4 @@
-Details can be found in [this](https://github.com/NouranAbdelaziz/ML_and_Sec_Accelerated_Chameleon_SoC) repository
+Details and code can be found in [this](https://github.com/NouranAbdelaziz/ML_and_Sec_Accelerated_Chameleon_SoC) repository
 # Chameleon SoC (IBEX)
 AHB-Lite based SoC for IBEX
 
