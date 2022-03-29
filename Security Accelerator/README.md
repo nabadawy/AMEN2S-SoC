@@ -16,4 +16,4 @@ function REDC is
     end if
 end function
 ```
-When the function is implemented in digital systems, R is taken be 2^n, where n is the number of bits in N.
+When the function is implemented in digital systems, R is taken be 2^n, where n is the number of bits in N. Therefore, any mod R operation is implemented using a bitwise And, and any division by R is implemented with a right shift.
