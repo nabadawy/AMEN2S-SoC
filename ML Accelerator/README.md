@@ -1,5 +1,5 @@
 # One 8-bit MAC unit accelerator
-We are using one unit to save area and minimise the delay. In order to do that we made divided the input into 4 8-bits passed to a 4x1 Mux and with the use of the 2-bits counter as a mux selector which increments with another clock 4x faster than the SoC's clock, we were able to implement the unit and get the desired functionality.
+The base unit of our project is the MAC unit where this module takes 8-bit to multiply them and output the result. This module takes: valid bit, 8-bits A, 8-bits B and outputs 8-bits out. The importance of the valid bit is to check weather the mac unit will work or output zero incase we do not want this mack to function. We are using one unit to save area and minimise the delay. In order to do that we made divided the input which is 32-bits in every load from the memory, into 4 8-bits passed to the MAC unit. [here](https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/ML%20Accelerator/mac)
 
 ## Architecture:
 ![MAC unit architecture](MAC_unit/mac.png)
@@ -10,15 +10,14 @@ We are using one unit to save area and minimise the delay. In order to do that w
 
 ![Untitled Diagram2 drawio](https://user-images.githubusercontent.com/62911896/145671523-54b7a095-4796-4dd6-9708-4ad5f72ef02c.png)
 
-## power Analysis
+## Power Analysis
 Our aim is to increase the speed of the accelerator without increasing the power consumption. That is why we migrated the convolution function to hte hardware instead of the software to increase the speed with less power usage. The power consumption is the power of the software plus the power ot the hardware.
 
 # Four 8-bit MAC unit accelerator
 
-
 ## Motivation:
-Since,area of MAC unit is very small (0.00235 mm^2) (264 gate cells) and the speed of one unit is 2.2ns less than 0.25% of clk cycle period, and to avoid the over head of using another clk, we propose that ML accelerator can consists of 4 8-bit MAC units.
-The code will be found [here](https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/ML%20Accelerator/4units-accelrator)
+In one cycle, we load 32-bits which then will be divided into 4 8-bits. Each 8-bits will be bassed to the MAC unit to be multiplied then the output of the four mac units will be accumilated to the old sum. The input of the Module is: 4-bits valid, 32-bits sum, 32-bits A, 32-bits B.
+The code will be found [here](https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/ML%20Accelerator/four_mac)
 
 
 ## Architecture :
