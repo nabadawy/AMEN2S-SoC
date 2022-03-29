@@ -5,7 +5,7 @@ function REDC is
     input: Integers R and N with gcd(R, N) = 1,
            Integer N′ in [0, R − 1] such that NN′ ≡ −1 mod R,
            Integer x in the range [0, RN − 1].
-    output: Integer t in the range [0, N − 1] such that t ≡ xR−1 mod N
+    output: Integer t in the range [0, N − 1] such that t ≡ xR^−1 mod N
 
     m ← ((x mod R)N′) mod R
     t ← (x + mN) / R
