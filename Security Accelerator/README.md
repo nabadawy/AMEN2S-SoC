@@ -27,6 +27,7 @@ This is the block diagram of the accelerator:
 | Accelerator  | 4513	        | 38677.09        |
 | SoC          | 64177	        | 661798.46       |
 | Percentage   | 7%             | 5.8%            |
+
 The accelerator consumes 7% of the SoC's total number of gates and 5.8% of its area.
 
 # Results:
