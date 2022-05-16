@@ -75,9 +75,20 @@ The number of filters in the popular convloution architecture such vggNet and Al
 ### Using 2 filters
 <img width="825" alt="r1" src="https://user-images.githubusercontent.com/72893623/160566241-c5b21a75-ad07-4fa3-ac11-465328a68200.png">
 
-
+|              | Without ACC.   | With ACC.     |
+| :---         |     :---:      |    :---:      |
+| Time(ns)     | 3654450  ns    | 2383290       |
+| Clock period | 10 ns          | 10 ns         |
+| Clock cycles | 365445         | 238329        |
+| speedup      |                | 34.8%         |
 
 ### Using 4 filters
+|              | Without ACC.   | With ACC.     |
+| :---         |     :---:      |    :---:      |
+| Time(ns)     | 6950430  ns    | 3380970       |
+| Clock period | 10 ns          | 10 ns         |
+| Clock cycles | 695043         | 338097        |
+| speedup      |                | 51.4%         |
 <img width="842" alt="r2" src="https://user-images.githubusercontent.com/72893623/160566266-5a5e801a-794f-494c-8e06-9b1a9bd45fb1.png">
 
 
