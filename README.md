@@ -1,6 +1,6 @@
 # MEN2AS-SoC
 ## Project Description:
-  The main Target of the product is contributing to the hardware development flow for the IoT devices. The product is an open source single core System on chip, based on the open source Chameleon SoC with 32-bit RISC-V (Ibex core) augmented with specialized blocks for compute-intensive data processing and encryption functions, supporting software codesign through [NNOM] (https://github.com/majianjia/nnom) and [wolfSSL] (https://github.com/wolfssl) libraries. 
+  The main Target of the product is contributing to the hardware development flow for the IoT devices. The product is an open source single core System on chip, based on the open source Chameleon SoC with 32-bit RISC-V (Ibex core) augmented with specialized blocks for compute-intensive data processing and encryption functions, supporting software codesign through [NNOM](https://github.com/majianjia/nnom) and [wolfSSL](https://github.com/wolfssl) libraries. 
 
 ## features:
   * Clock Frequency : 33 MHz for 130 NM technology
