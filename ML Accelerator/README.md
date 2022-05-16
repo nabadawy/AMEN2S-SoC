@@ -55,9 +55,6 @@ The number of filters in the popular convloution architecture such vggNet and Al
 ## Architecture :
 ![parallel2](https://user-images.githubusercontent.com/72893623/160555495-499b85f0-4443-4633-8e84-9c70d626984b.png)
 
-## simulation:
-
-<img width="1068" alt="s1" src="https://user-images.githubusercontent.com/72893623/160566648-01119d20-90c7-4e95-966c-25284a0536de.png">
 
 ## Analysis :
 
@@ -74,12 +71,12 @@ After connecting Accelerator on SOC, we test the accelerator with a covloution f
 ## Results
 
 
-
+### Using 2 filters
 <img width="825" alt="r1" src="https://user-images.githubusercontent.com/72893623/160566241-c5b21a75-ad07-4fa3-ac11-465328a68200.png">
 
 
 
-
+### Using 4 filters
 <img width="842" alt="r2" src="https://user-images.githubusercontent.com/72893623/160566266-5a5e801a-794f-494c-8e06-9b1a9bd45fb1.png">
 
 
