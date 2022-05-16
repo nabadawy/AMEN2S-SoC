@@ -20,7 +20,7 @@ When the function is implemented in digital systems, R is taken be 2^n, where n 
 # Architecture:
 Instead of implementing the algorithm in verilog in the straightforward way, it is implemented in a way to reuse some hardware components. So, in total this accelerator uses one shifter, one adder/subtractor, and one multiplier.
 This is the block diagram of the accelerator:
-![Block Diagram](modified accelerator.png)
+![Block Diagram](modified\ accelerator.png)
 # Design Analysis:
 ![Design Analysis](design_analysis.png)
 # Results:
