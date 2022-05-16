@@ -22,6 +22,6 @@ Instead of implementing the algorithm in verilog in the straightforward way, it 
 This is the block diagram of the accelerator:
 /*photo to be added*/
 # Design Analysis:
-![Design Analysis][design_analysis.png]
+![Design Analysis][/MEN2S-SoC/blob/main/Security%20Accelerator/design_analysis.png "Design Analysis"]
 # Results:
 /*photo to be added*/
