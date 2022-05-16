@@ -18,7 +18,7 @@
 
 ## Accelerators:
 ###  Machine Learning Accelerator:
-In this part, we were aiming to accelerate the machine leaning models thatr deployed on  embeded systems for IOT devices. We first started with profiling KWS model to  find that local_convlove function took 95.95% of the total time. Therefore, we worked on designing an ML accelerator to speedup MAC operations wich is the main unit of convolution function. More details could be found [here](https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/ML%20Accelerator)
+In this part, we were aiming to accelerate the machine leaning models thatr deployed on  embeded systems for IOT devices. We first started with profiling KWS model on [NNOM](https://github.com/majianjia/nnom/tree/master/examples/keyword_spotting) paltform to  find that `local_convlove` function took 95.95% of the total execution time. Therefore, we worked on designing an ML accelerator to speedup MAC operations wich is the main unit of convolution function. More details could be found [here](https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/ML%20Accelerator)
 
 We also migrated the lookup tables of Activation functions Tanh and sigmoid from software to hardware in order to reduce on-chip memory.
 More details could be found [here]
