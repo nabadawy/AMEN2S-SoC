@@ -17,4 +17,11 @@ function REDC is
 end function
 ```
 When the function is implemented in digital systems, R is taken be 2^n, where n is the number of bits in N. Therefore, any mod R operation is implemented using a bitwise And, and any division by R is implemented with a right shift.
+# Architecture:
 Instead of implementing the algorithm in verilog in the straightforward way, it is implemented in a way to reuse some hardware components. So, in total this accelerator uses one shifter, one adder/subtractor, and one multiplier.
+This is the block diagram of the accelerator:
+/*photo to be added*/
+# Design Analysis:
+/*photo to be added*/
+# Results:
+/*photo to be added*/
