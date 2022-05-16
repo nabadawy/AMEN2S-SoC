@@ -16,7 +16,7 @@
 
 
 
-
+## Accelerators:
 ###  Machine Learning Accelerator:
 In this part, we were aiming to accelerate the machine leaning models thatr deployed on  embeded systems for IOT devices. We first started with profiling KWS model to  find that local_convlove function took 95.95% of the total time. Therefore, we worked on designing an ML accelerator to speedup MAC operations wich is the main unit of convolution function. More details could be found [here](https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/ML%20Accelerator)
 
@@ -25,10 +25,10 @@ More details could be found [here]
 ### Security Accelerator:
 In this part, we work on accelerating the Montgomery Reduction function used in the SSL protocol. More details could be found [here](https://github.com/nabadawy/Energy-Efficient-Soc-through-acceleration-for-IoT-applications/tree/main/Security%20Accelerator)
 
-### Accelerators integration with SoC:
+## Accelerators integration with SoC:
 After finalizing the design of the accelerators, we integrated them with the Chameleon SoC (an open source ibex based SoC) to test the system effeciency. More details could be found [here](https://github.com/NouranAbdelaziz/ML_and_Sec_Accelerated_Chameleon_SoC)
 
-### Hardening SoC
+## Hardening SoC
 We then moved to harden our design using [OpenLane] and we were able to have gds of our design. 
 More details could be found [here]
 
