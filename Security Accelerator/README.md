@@ -24,4 +24,4 @@ This is the block diagram of the accelerator:
 # Design Analysis:
 ![Design Analysis](design_analysis.png)
 # Results:
-/*photo to be added*/
+![Results](results.png)
