@@ -1,5 +1,5 @@
 # Security Accelerator: Montgomery Reduction
-This accelerator implements the montgomery reduction step used in modular multiplications in many security schemes (RSA, DH key exchange...etc.). This step calculates xR^-1 (mod N) as follows:
+This accelerator implements the montgomery reduction step used in modular multiplications in many security schemes (RSA, DH key exchange...etc.). This step calculates xR^-1 mod N as follows:
 ```
 function REDC is
     input: Integers R and N with gcd(R, N) = 1,
@@ -17,3 +17,4 @@ function REDC is
 end function
 ```
 When the function is implemented in digital systems, R is taken be 2^n, where n is the number of bits in N. Therefore, any mod R operation is implemented using a bitwise And, and any division by R is implemented with a right shift.
+Instead of implementing the algorithm in verilog in the straightforward way, it is implemented in a way to reuse some hardware components. So, in total this accelerator uses one shifter, one adder/subtractor, and one multiplier.
