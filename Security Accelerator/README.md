@@ -22,6 +22,6 @@ Instead of implementing the algorithm in verilog in the straightforward way, it 
 This is the block diagram of the accelerator:
 /*photo to be added*/
 # Design Analysis:
-/*photo to be added*/
+![Design Analysis](design_analysis.png)
 # Results:
 ![Results](results.png)
