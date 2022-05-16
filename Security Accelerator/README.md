@@ -22,13 +22,16 @@ Instead of implementing the algorithm in verilog in the straightforward way, it 
 This is the block diagram of the accelerator:
 ![Block Diagram](modified_accelerator.png)
 # Design Analysis:
+|              | Gate Count.    | Area(um^2).     |
+| :---         |     :---:      |    :---:        |
+| Accelerator  | 4513	        | 38677.09        |
+| SoC          | 64177	        | 661798.46       |
+| Percentage   | 7%             | 5.8%            |
+
+# Results:
 |              | Without ACC.   | With ACC.     |
 | :---         |     :---:      |    :---:      |
 | Time(ns)     | 189810 ns      | 96300 ns      |
 | Clock period | 10 ns          | 10 ns         |
 | Clock cycles | 18981          | 9630          |
 | speedup      |                | 49.3%         |
-
-![Design Analysis](design_analysis.png)
-# Results:
-![Results](results.png)
