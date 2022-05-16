@@ -65,7 +65,8 @@ The number of filters in the popular convloution architecture such vggNet and Al
 
 ## Testing on SoC :
 
-After connecting Accelerator on SOC, we test the accelerator with a covloution function its input pixels are of size 5*5 and 3 input channels, the size of filters is 3x3 and we test once with two filters and another time with four filters. In the two filters case, we were able  to achieve an acceleration of 34.8% with parallel accelerator compared to 20.8% with four_Mac acceleraltor. For the four filters case, we were able to achieve an acceleration of 51.4% with parallel accelerator compared to 15.4% with four_Mac accelerrator.
+  After integrating Accelerator with SOC, we tested the accelerator with a covloution function its input pixels are of size 5*5 and 3 input channels, the size of filters is 3x3 and we test once with two filters and another time with four filters. In the two filters case, we were able  to achieve an acceleration of 34.8% with parallel accelerator compared to 20.8% with four_Mac acceleraltor. For the four filters case, we were able to achieve an acceleration of 51.4% with parallel accelerator compared to 15.4% with four_Mac accelerrator.
+  Our methodology of testing accelerator is to write a GPIO pin before calling function and another one after calling it and then measure time between two instances.
 
 
 ## Results
