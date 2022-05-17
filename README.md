@@ -45,5 +45,7 @@ After finalizing the design of the accelerators, we integrated them with the Cha
 
 ## Hardening SoC
 We then moved to harden our design using [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) flow and we were able to have gds of our design. 
-More details could be found [here]
 
+
+
+![gds](https://user-images.githubusercontent.com/72893623/168799870-1ee417d1-3833-46d0-b26e-985220399cdf.png)
