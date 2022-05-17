@@ -26,7 +26,7 @@ Just like any edge device, due to the memory constraints and the requirement of 
 ## Architecture:
 The final SoC Architecture is showing the integration between the [Chameleon SoC](https://github.com/shalan/Chameleon_SoC) and our extra hardware components (ML (Convolution Accelerator) Unit, Data Security Unit and the two activation functions (Tanh and Sigmoid)
 
-(https://github.com/nabadawy/MEN2AS-SoC/blob/main/Architecture/ThesisI-Page-1.drawio.png)
+![Architecture](https://github.com/nabadawy/MEN2AS-SoC/blob/main/Architecture/ThesisI-Page-1.drawio1.png)
 
 
 
