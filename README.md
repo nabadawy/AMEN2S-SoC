@@ -2,7 +2,7 @@
 ## Project Description:
   The main Target of the product is contributing to the hardware development flow for the IoT devices. The product is an open source single core System on chip, based on the open source Chameleon SoC with 32-bit RISC-V (Ibex core) augmented with specialized blocks for compute-intensive data processing and encryption functions, supporting software codesign through [NNOM](https://github.com/majianjia/nnom) and [wolfSSL](https://github.com/wolfssl) libraries. 
 
-## features:
+## Features:
   * Clock Frequency : 33 MHz for 130 NM technology
   * Gates number : 64177
   * Machine Learning Accelerator
@@ -18,9 +18,9 @@
 There is an assumption that Machine Learning models are trained using Keras and compatible with NNOM library to be converted to c models and deployed on the soc
 ### Security Protocols assumptions 
 The implementation of the Montgomery Reduction accelerators assumes the use of SSL protocol and the wolfSSL library specifically.
-### assume single core 
+### Single core 
 There is an assumption that the applications which will run on the SoC will not require using more than one core to meet their required deadlines and a single core will be sufficient to do so. 
-### low weight application 
+### Lightweight application 
 Just like any edge device, due to the memory constraints and the requirement of low power consumptions, the application which will run on top of the SoC must not be a heavy weight one. 
 
 ## Architecture:
