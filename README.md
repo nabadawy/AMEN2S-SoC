@@ -24,7 +24,8 @@ There is an assumption that the applications which will run on the SoC will not 
 Just like any edge device, due to the memory constraints and the requirement of low power consumptions, the application which will run on top of the SoC must not be a heavy weight one. 
 
 ## Architecture:
-The final SoC Architecture is showing the integration between the Chameleon [SoC](https://github.com/shalan/Chameleon_SoC) and our extra hardware components (ML (Convolution Accelerator) Unit, Data Security Unit and the two activation functions (Tanh and Sigmoid)
+The final SoC Architecture is showing the integration between the [Chameleon SoC](https://github.com/shalan/Chameleon_SoC) and our extra hardware components (ML (Convolution Accelerator) Unit, Data Security Unit and the two activation functions (Tanh and Sigmoid)
+
 (https://github.com/nabadawy/MEN2AS-SoC/blob/main/Architecture/ThesisI-Page-1.drawio.png)
 
 
