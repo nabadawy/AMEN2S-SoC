@@ -14,13 +14,13 @@
 * The RSA & SHA-3 will depend on the wolfSSL library that has a lightweight implementation of SSL suitable for embedded devices.
 
 ## Assumptions:
-###Machine learning models are built on Keras and supported by NNOM
+### Machine learning models are built on Keras and supported by NNOM
 There is an assumption that Machine Learning models are trained using Keras and compatible with NNOM library to be converted to c models and deployed on the soc
-###Security Protocols assumptions 
+### Security Protocols assumptions 
 The implementation of the RSA and SHA-3 accelerators assumes the use of SSL protocol and the wolfSSL library specifically. 
-###assume single core 
+### assume single core 
 There is an assumption that the applications which will run on the SoC will not require using more than one core to meet their required deadlines and a single core will be sufficient to do so. 
-###low weigh application 
+### low weigh application 
 Just like any edge device, due to the memory constraints and the requirement of low power consumptions, the application which will run on top of the SoC must not be a heavy weight one. 
 
 ## Architecture:
