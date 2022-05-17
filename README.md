@@ -44,6 +44,6 @@ In this part, we work on accelerating the Montgomery Reduction function used in 
 After finalizing the design of the accelerators, we integrated them with the Chameleon SoC (an open source ibex based SoC) to test the system effeciency. More details could be found [here](https://github.com/NouranAbdelaziz/ML_and_Sec_Accelerated_Chameleon_SoC)
 
 ## Hardening SoC
-We then moved to harden our design using [OpenLane] and we were able to have gds of our design. 
+We then moved to harden our design using [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane) flow and we were able to have gds of our design. 
 More details could be found [here]
 
