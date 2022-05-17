@@ -9,9 +9,9 @@
   * Security Accelerator
 
 ## Dependencies:
-*Our product depends on the RISC-V GNU Compiler Toolchain to compile the C code into a Hex file which can then be executed with the SoC. 
-*There is no special dependency for NNOM since it uses local pure C backend implementation. It only needs to enable  libc ,malloc(), free(), and memset().Otherwise, you can use the equivalent memory method in your system
-*The RSA & SHA-3 will depend on the wolfSSL library that has a lightweight implementation of SSL suitable for embedded devices.
+* Our product depends on the RISC-V GNU Compiler Toolchain to compile the C code into a Hex file which can then be executed with the SoC. 
+* There is no special dependency for NNOM since it uses local pure C backend implementation. It only needs to enable  libc ,malloc(), free(), and memset().Otherwise, you can use the equivalent memory method in your system
+* The RSA & SHA-3 will depend on the wolfSSL library that has a lightweight implementation of SSL suitable for embedded devices.
 
 ## Assumptions:
 ###Machine learning models are built on Keras and supported by NNOM
